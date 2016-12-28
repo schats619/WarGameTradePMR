@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARD WAR</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="col-md-5">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1>Game History <a href="#"><span class="glyphicon glyphicon-info"/></a></h1>
+            </div>
+            <div class="panel-body">
+                    <h2>Latest</h2>
+                <div class="history">
+                    <div id="historyHeader"></div>
+                </div>
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1>Card War Game! <a href="#" data-toggle="modal" data-target="#infoModal"><span class="glyphicon glyphicon-info-sign" style="color:white;"></span></a></h1>
+            </div>
+            <div class="panel-body">
+                <div id="game">
+                    <div id="winner"></div>
+                    <div id="winnerWar"></div>
+                    <div id="players"></div>
+                    <div id="player1CardLeft"></div>
+                    <div id="player2CardLeft"></div>
+                    <br/>
+                    <p id="gameover_restart"></p>
+                    <div id="totalAmount"></div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button type="button" id="draw" class="btn btn-primary">Draw</button>
+                <div id="war">
+                    <button type="button" data-id="continue" title="Continue the game" class="btn btn-info">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-11">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1>Track of Cards</h1>
+            </div>
+            <div class="panel-body">
+                <div id="game">
+
+                    <div align="left" style="margin-right:22px;"class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Player1
+                                    </th>
+                                    <th>
+                                        Player2
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td id="player1"></td>
+                                <td id="player2"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="infoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                    <h4 class="modal-title">Instruction</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Code the card game, War. You may have played it before, but for the sake of this exercise,
+                        it looks like this. One deck of 52 cards is shuffled and dealt evenly between two players.
+                        During each play, each player lays down one card face up. The player with the higher ranking
+                        card (aces are high, suits (clubs, diamonds, spades, hearts) are ignored) takes both cards
+                        and add them to the bottom of his or her deck. If the cards are equal, a "war" ensues. The
+                        current cards are left in play. Each player plays another card face down, then another card
+                        face up. The player with the higher face up card takes all the cards that are in play and
+                        adds them to bottom of his or her deck. If the face up cards are still equal, the war continues
+                        until one player plays a higher card.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/war.js"></script>
+
+</html>
