@@ -1,0 +1,83 @@
+#game {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#war {
+    display: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+#winner{
+
+    font-weight:bold;
+    font-size:20px;
+    background-color: #CCCCAA;
+}
+#player1,
+#player2 {
+    margin-top:122px;
+    margin-right:122px;
+    font-size: 20px;
+    padding-bottom:120px;
+    font-weight: bold;
+}
+
+#winner, #winner1 ,#winner2 {
+    font-size: 20px;
+    padding-top:-160px;
+    margin: auto 0%;
+    float:left;
+    margin-top:100px;
+}
+
+#war button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+.panel-body{
+    height:300px;
+    overflow-y:scroll;
+    width:100%;
+}
+
+.selected {
+    background-color: #CCA;
+}
+
+#player1CardLeft, #players, #player2CardLeft{
+    background-color:#eaeaea;
+    color:black;
+    border: double 1px black;
+    max-width: 40%;
+    text-align: center;
+    float:left;
+
+}
+
+.winnerFound {
+    font-size: 20px !important;
+}
+
+
+#history hr {
+    border: 2px solid cornflowerblue;
+    margin: 20px 0px 20px 0px;
+}
+
+
+.historyGame:nth-child(2) {
+    margin-top: 10px;
+}
+
+.historyWinner {
+    color: lime !important;
+}
